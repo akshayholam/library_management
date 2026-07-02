@@ -2,8 +2,12 @@
 # For license information, please see license.txt
 
 # import frappe
+import frappe
 from frappe.model.document import Document
 
-
 class Article(Document):
-	pass
+    def before_save(self):
+        frappe.msgprint(f'Article {self.article_name} is being saved!')
+    
+    def after_save(self):
+        frappe.msgprint(f'Article {self.article_name} saved successfully!')
