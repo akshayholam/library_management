@@ -269,3 +269,9 @@ fixtures = [
         ]
     }
 ]
+{
+    "doctype": "Server Script",
+    "filters": [
+        ["name", "in", ["Article Server Script"]]
+    ]
+}
