@@ -255,3 +255,17 @@ fixtures = [
         ]
     }
 ]
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": [
+            ["module", "in", ["Library Management"]]
+        ]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [
+            ["module", "in", ["Library Management"]]
+        ]
+    }
+]
