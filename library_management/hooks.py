@@ -275,3 +275,9 @@ fixtures = [
         ["name", "in", ["Article Server Script"]]
     ]
 }
+doc_events = {
+    "Article": {
+        "after_save": "library_management.library_management.api.send_notification"
+    }
+}
+
