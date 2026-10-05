@@ -35,5 +35,17 @@ fixtures = [
         "filters": [
             ["name", "in", ["Article Server Script"]]
         ]
+    },
+    {
+        "doctype": "Print Format",
+        "filters": [
+            ["name", "in", ["Credit Note - RIP", "Tax Invoice - RIP", "Delivery Challan - RIP", "Rishab PO Format"]]
+        ]
+    },
+        {
+        "doctype": "Custom Field",
+        "filters": [
+            ["fieldname", "in", ["challan_type", "total_weight_kg", "dc_department", "dc_ref_person"]]
+        ]
     }
 ]
